@@ -22,7 +22,7 @@ const App: React.FC = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/games"
+        "https://timepass-a7m2.onrender.com/api/games"
       );
       setGames(response.data);
     } catch (error) {
@@ -44,13 +44,13 @@ const App: React.FC = () => {
     try {
       if (id) {
         await axios.put(
-          `http://localhost:5000/api/games/${id}`,
+          `https://timepass-a7m2.onrender.com/api/games/${id}`,
           game
         );
         toast.success("Game updated successfully");
       } else {
         await axios.post(
-          "http://localhost:5000/api/games",
+          "https://timepass-a7m2.onrender.com/api/games",
           game
         );
         toast.success("Game added successfully");
@@ -68,7 +68,7 @@ const App: React.FC = () => {
     setLoading(true);
     try {
       await axios.delete(
-        `http://localhost:5000/api/games/${id}`
+        `https://timepass-a7m2.onrender.com/api/games/${id}`
       );
       toast.success("Game deleted successfully");
       fetchGames();

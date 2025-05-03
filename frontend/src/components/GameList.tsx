@@ -27,7 +27,7 @@ const GameList: React.FC<GameListProps> = ({ games, onEdit, onDelete }) => {
   useEffect(() => {
     const fetchFilteredGames = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/games", {
+        const response = await axios.get("https://timepass-a7m2.onrender.com/api/games", {
           params: { search, sort },
         });
         setFilteredGames(response.data);

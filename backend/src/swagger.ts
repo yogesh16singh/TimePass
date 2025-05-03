@@ -14,7 +14,7 @@ const options = {
       {
         url: process.env.VERCEL_URL
           ? `https://${process.env.VERCEL_URL}`
-          : "http://localhost:5000",
+          : "https://timepass-a7m2.onrender.com",
           // : "http://localhost:5500",
 
       },
