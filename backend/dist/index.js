@@ -14,7 +14,7 @@ const app = (0, express_1.default)();
 const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/game-crud";
 app.use((0, cors_1.default)({
-    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://time-pass-two.vercel.app/'],
+    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://time-pass-two.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 app.use(express_1.default.json());
