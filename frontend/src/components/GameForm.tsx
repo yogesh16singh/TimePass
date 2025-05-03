@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaCircleCheck } from "react-icons/fa6";
+// import { FaCircleCheck } from "react-icons/fa6";
 import { RxCrossCircled } from "react-icons/rx";
 
 interface Game {
