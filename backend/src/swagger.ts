@@ -15,6 +15,8 @@ const options = {
         url: process.env.VERCEL_URL
           ? `https://${process.env.VERCEL_URL}`
           : "http://localhost:5000",
+          // : "http://localhost:5500",
+
       },
     ],
   },
